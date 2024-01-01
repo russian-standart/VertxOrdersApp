@@ -1,9 +1,9 @@
 # Extend vert.x image
-FROM vertx/vertx3
+FROM vertx/vertx4
 
 #                                                       (1)
 ENV VERTICLE_NAME com.ordersvert.OrderVerticle
-ENV VERTICLE_FILE target/ordersverticle-1.0.0-SNAPSHOT-fat.jar
+ENV VERTICLE_FILE target/ordersverticle-1.0.0-SNAPSHOT.jar
 
 # Set the location of the verticles
 ENV VERTICLE_HOME /usr/verticles
